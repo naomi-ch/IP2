@@ -14,8 +14,9 @@
     <div class="description">
       <h1 class="display-4 text-primary">The Akan Naming System</h1>
       <p>This is a website to determine your name based on the day of the week that you were born.
-          This is a Ghanian system called: "The Akan Naming System". <br>
-          If you are male your your name would be: </p>
+          This is a Ghanian system called: "The Akan Naming System". </p><br>
+
+          <p>Male names:</p>
        <ul> <!--style this and make it pretty-->
          <li>Sunday: Kwasi</li>
          <li>Monday: Kwandwo</li>
@@ -24,6 +25,16 @@
          <li>Thursday: Yaw</li>
          <li>Friday: Kofi</li>
          <li>Saturday: Kwame</li>
+       </ul>
+       <p>Female names:</p> <!--make a column so that the male + female names are together-->
+       <ul>
+         <li>Sunday: Akosua</li>
+         <li>Monday: Adwoa</li>
+         <li>Tuesday: Abenaa</li>
+         <li>Wednesday: Akua</li>
+         <li>Thursday: Yaa</li>
+         <li>Friday: Afua</li>
+         <li>Saturday: Ama</li>
        </ul>
   </div>
   <form>
@@ -37,14 +48,14 @@
     <input type="text" id="year" class="form-control" placeholder="year">
     <p id="yearerror"></p>
 
-    <h1 text primary>Select your gender</h1>
+    <h1 text primary>Select your gender:</h1>
     <label for="male">Male:</label>
     <input type="checkbox" id="male" class="">
-    <label for="female">female</label>
+    <label for="female">Female:</label>
     <input type="checkbox" id="female" class=""><br>
     <p id="checkbox-error"></p>
 
-    <button type="button" onclick="fn()" class="btn btn-large btn-block btn-outline-primary">Get Akan name</button>
+    <button type="button" onclick="fn()" class="btn btn-large btn-block btn-outline-primary">Get Akan Name</button>
   </form>
 
 
