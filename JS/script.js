@@ -1,4 +1,4 @@
-function fn(){
+function fn(){ //seems to only say that name is akua, edit it so it changes accordingly"
   var d = new Date();
   var date = parseInt(document.getElementById("day").value);
   var month = parseInt(document.getElementById("month").value) - 1;
