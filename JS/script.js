@@ -1,8 +1,13 @@
-function fn(){ 
-  var d = new Date();
+function newDate(){ 
+  var d = newDate();
   var date = parseInt(document.getElementById("day").value);
   var month = parseInt(document.getElementById("month").value) - 1;
   var year = parseInt(document.getElementById("year").value);
+  var day = d.getDay();
+  var days = ['sunday', 'monday', "tuesday", "wednesday", "thursday", "friday", "saturday"]
+  var male = ["Kwasi", " Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+  var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
   if (date <= 0 || date > 31) {
       document.getElementsByClassName("dayerror").innerHtml = "Enter valid date";
       return false;
@@ -31,11 +36,9 @@ function fn(){
       d.setYear(year);
   }
   var day = d.getDay();
-  var days = ['sunday', 'monday', "tuesday", "wednesday", "thursday", "friday", "saturday"]
+  var days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
   var male = ["Kwasi", " Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-
-
 
 function getAkan() {
   var ismale = document.getElementById('male').checked;
