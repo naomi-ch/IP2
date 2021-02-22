@@ -1,4 +1,4 @@
-function fn(){ //seems to only say that name is akua, edit it so it changes accordingly"
+function fn(){ 
   var d = new Date();
   var date = parseInt(document.getElementById("day").value);
   var month = parseInt(document.getElementById("month").value) - 1;
@@ -34,6 +34,8 @@ function fn(){ //seems to only say that name is akua, edit it so it changes acco
   var days = ['sunday', 'monday', "tuesday", "wednesday", "thursday", "friday", "saturday"]
   var male = ["Kwasi", " Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+
 
 function getAkan() {
   var ismale = document.getElementById('male').checked;
