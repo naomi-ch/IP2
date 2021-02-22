@@ -3,6 +3,8 @@
 #### By **{Naomi Chika}**
 ## Description
 {This is my second submission of my IP. It is a simple website which incorporates what I have learnt in Week 1-2.}
+## Known Bugs
+{The javascript code is unpredictable in the sense that sometimes it returns what is asked, and sometimes it does not. Sometimes it returns accurate results sometimes it does not.}
 ## Technologies Used
 {Languages used to create this website are Javascript, HTML, CSS and Bootstrap. 
 ### License
