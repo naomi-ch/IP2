@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale 1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--maybe remove--> 
   <title> Independent Project #2</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="JS/script.js"></script> <!--confirm this is how you add JS--> 
+  <script src="JS/script.js"></script> 
 </head>
 <body>
-  <div class="formelements">  <!--change name l8r-->
+  <div class="formelements">  
     <div class="description">
       <h1>The Akan Naming System</h1>
       <p>This website will determine your Akan name using the day, month and year that you were born to calculate the day of your birth. Your Akan name is based on the day of the week that you were born.
@@ -23,7 +21,7 @@
           <div class="card-body"> 
             <h3 class="card-header">Male</h3>
     
-       <ul class="card-body"> <!--style this and make it pretty-->
+       <ul class="card-body"> 
          <li>Sunday: <strong>Kwasi</strong></li>
          <li>Monday: <strong>Kwandwo</strong></li>
          <li>Tuesday: <strong>Kwabena</strong></li>
@@ -37,7 +35,7 @@
       
         <div class="card">
           <div class="card-body">
-              <h3 class="card-header">Female</h3> <!--make a column so that the male + female names are together-->
+              <h3 class="card-header">Female</h3> 
     
        <ul class="card-body">
          <li>Sunday: <strong>Akosua</strong></li>
@@ -72,6 +70,12 @@
     <p id="checkbox-error"></p>
 
     <button type="button" onclick="fn()" class="btn btn-large btn-block btn-outline-primary">Get Akan Name</button>
+    <script>
+      function fn() {
+        document.getElementsByClassName("btn btn-large btn-block btn-outline-primary").innerHTML = "";
+      }
+      </script>
+      
   </form>
 
 
