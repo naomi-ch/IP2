@@ -1,4 +1,4 @@
-function newDate(){ 
+function newDate() { 
   var d = newDate();
   var date = parseInt(document.getElementById("day").value);
   var month = parseInt(document.getElementById("month").value) - 1;
@@ -33,16 +33,16 @@ function newDate(){
       d.setYear(year);
   }
  
-function getAkan() {
-  var ismale = document.getElementById('male').checked;
-  var isfemale = document.getElementById('female').checked;
+function getAkan(male,female) {
+  var isMale = document.getElementById('male').checked;
+  var isFemale = document.getElementById('female').checked;
   var yearNumber= year%100;
   var centuryNumber= parseInt(year/100);
   var male = ["Kwasi", " Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-  let result = parseInt((date + ((13*(month +1))/5) + yearNumber + (yearNumber/4) + (5*centuryNumber))%7
+  let result = parseInt((date + ((13*(month +1))/5) + yearNumber + (yearNumber/4) + (5*centuryNumber))%7);
 
-  if (ismale === true && isfemale === false) {
+  if (isMale === true && isFemale === false) {
       if (result === 0) {
         alert("Your name is " + male[0]);
       } else if (result === 1) {
@@ -77,6 +77,4 @@ function getAkan() {
           alert("Your name is " + female[6]);
       } 
   }
-  }
-
 }
