@@ -32,6 +32,7 @@ function newDate() {
   } else {
       d.setYear(year);
   }
+}
  
 function getAkan(male,female) {
   var isMale = document.getElementById('male').checked;
@@ -77,4 +78,5 @@ function getAkan(male,female) {
           alert("Your name is " + female[6]);
       } 
   }
+}
 }
